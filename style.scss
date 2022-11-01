@@ -1,6 +1,6 @@
 $base-color:#ffffff;
 $main-color:#bcff67;
-$accent-color:#3dffff;
+$accent-color:#004f4f;
 
 .menu-wrapper {
     // メニュー要素の位置設定、左ビューポート70％を余白
@@ -10,8 +10,7 @@ $accent-color:#3dffff;
     width: 30vw;
     height: 100vh;
     
-    // 色指定
-    background-color: $main-color;
+
     
     // flexbox指定、子要素は縦列
     display: flex;
@@ -21,12 +20,38 @@ $accent-color:#3dffff;
 
 .menu-item {
     height: 15vh;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
+
+    // 色指定
+    background-color: $main-color;
+    
+    canvas {
+        position: fixed;
+    }
+
+    section {
+        width: 30vw;
+        height: 15vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: center;
+    }
+
+    :hover {
+        background-color: $base-color;
+    } 
 }
 
 .menu-spacer{
     height: 20vh;
+
+    // 色指定
+    background-color: $main-color;
 }
+

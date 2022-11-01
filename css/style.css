@@ -2,7 +2,6 @@
   margin-left: 70vw;
   width: 30vw;
   height: 100vh;
-  background-color: #bcff67;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,8 +12,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #bcff67;
+}
+.menu-item canvas {
+  position: fixed;
+}
+.menu-item section {
+  width: 30vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menu-item :hover {
+  background-color: #ffffff;
 }
 
 .menu-spacer {
   height: 20vh;
+  background-color: #bcff67;
 }/*# sourceMappingURL=style.css.map */
