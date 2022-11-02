@@ -1,23 +1,24 @@
 .menu-wrapper {
-  margin-left: 70vw;
-  width: 30vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
 }
-
-.menu-item {
+.menu-wrapper .menu-item {
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #bcff67;
 }
-.menu-item canvas {
+.menu-wrapper .menu-item canvas {
   position: fixed;
+  width: 10vw;
+  height: 10vh;
 }
-.menu-item section {
+.menu-wrapper .menu-item section {
   width: 30vw;
   height: 15vh;
   display: flex;
@@ -25,11 +26,11 @@
   align-items: center;
   text-align: center;
 }
-.menu-item :hover {
+.menu-wrapper .menu-item :hover {
   background-color: #ffffff;
 }
-
-.menu-spacer {
+.menu-wrapper .menu-spacer {
+  width: 30vw;
   height: 20vh;
   background-color: #bcff67;
 }/*# sourceMappingURL=style.css.map */
