@@ -12,4 +12,14 @@ const context = cvs.getContext( "2d" );
 // context.fill();  // パスの情報をもとに塗りつぶし
 // context.stroke();  // パスの情報をもとに線を描画
 
-context.clearRect( 0 , 0 , cvs.clientWidth , cvs.clientHeight);
+// context.clearRect( 0 , 0 , cvs.clientWidth , cvs.clientHeight);
+
+cvs.addEventListener('mouseover', function() {
+cvs.style.backgroundColor = 'orange';
+cvs.style.width = '200vw';
+});
+
+const itm = document.getElementsByClassName( "menu-item" );
+itm[3].addEventListener('mouseover', function() {
+    itm[3].style.width = '100vw';
+});

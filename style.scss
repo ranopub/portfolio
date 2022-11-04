@@ -24,10 +24,16 @@ $accent-color:#004f4f;
         // 色指定
         background-color: $main-color;
         
+        p {
+            z-index: 300;
+        }
+
         canvas {
             position: fixed;
-            width: 10vw;
-            height: 10vh;
+            width: 30vw;
+            height: 15vh;
+            
+            z-index: 200;
         }
 
         section {
@@ -38,12 +44,14 @@ $accent-color:#004f4f;
             justify-content: center;
             align-items: center;
             
+            
+
             text-align: center;
         }
 
-        :hover {
-            background-color: $base-color;
-        } 
+        // :hover {
+        //     background-color: $base-color;
+        // } 
     }
 
     .menu-spacer{
