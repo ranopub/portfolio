@@ -14,12 +14,25 @@ const context = cvs.getContext( "2d" );
 
 // context.clearRect( 0 , 0 , cvs.clientWidth , cvs.clientHeight);
 
-cvs.addEventListener('mouseover', function() {
-cvs.style.backgroundColor = 'orange';
-cvs.style.width = '200vw';
-});
+// cvs.addEventListener('mouseover', function() {
+// cvs.style.backgroundColor = 'orange';
+// cvs.style.width = '100vw';
+// });
 
-const itm = document.getElementsByClassName( "menu-item" );
-itm[3].addEventListener('mouseover', function() {
-    itm[3].style.width = '100vw';
+// const itm = document.getElementsByClassName( "menu-item" );
+// itm[3].addEventListener('mouseover', function() {
+//     itm[3].style.width = '100vw';
+// });
+
+$(function(){
+
+	$('.menu-item').hover(
+		function(){
+			var i = $('.menu-item').index(this);
+			$('.menu-item').eq(i).css('width','100vw');
+		},
+		function(){
+			var i = $('.menu-item').index(this);
+			$('.menu-item').eq(i).css('width','30vw');
+		}	);
 });

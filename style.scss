@@ -15,6 +15,7 @@ $accent-color:#004f4f;
 
 
     .menu-item {
+        width: 30vw;
         height: 15vh;
         
         display: flex;
@@ -30,8 +31,9 @@ $accent-color:#004f4f;
 
         canvas {
             position: fixed;
-            width: 30vw;
+            width: auto;
             height: 15vh;
+            left: 0%;
             
             z-index: 200;
         }
@@ -44,8 +46,6 @@ $accent-color:#004f4f;
             justify-content: center;
             align-items: center;
             
-            
-
             text-align: center;
         }
 

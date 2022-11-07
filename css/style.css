@@ -7,6 +7,7 @@
   align-items: flex-end;
 }
 .menu-wrapper .menu-item {
+  width: 30vw;
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -18,8 +19,9 @@
 }
 .menu-wrapper .menu-item canvas {
   position: fixed;
-  width: 30vw;
+  width: auto;
   height: 15vh;
+  left: 0%;
   z-index: 200;
 }
 .menu-wrapper .menu-item section {
