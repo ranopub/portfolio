@@ -12,16 +12,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
   background-color: #bcff67;
+  transition: 500ms;
 }
 .menu-wrapper .menu-item p {
   z-index: 300;
 }
 .menu-wrapper .menu-item canvas {
   position: fixed;
-  width: auto;
+  width: 30%;
   height: 15vh;
-  left: 0%;
+  left: 70%;
   z-index: 200;
 }
 .menu-wrapper .menu-item section {

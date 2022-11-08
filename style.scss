@@ -22,18 +22,23 @@ $accent-color:#004f4f;
         justify-content: center;
         align-items: center;
 
+        z-index: 100;
+
         // 色指定
         background-color: $main-color;
         
+        //アニメーション速度
+        transition: 500ms;
+
         p {
             z-index: 300;
         }
 
         canvas {
             position: fixed;
-            width: auto;
+            width: 30%;
             height: 15vh;
-            left: 0%;
+            left: 70%;
             
             z-index: 200;
         }
