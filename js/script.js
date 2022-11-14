@@ -1,8 +1,7 @@
 window.alert($.fn.jquery);
 
-const cvs = document.getElementById( "canvas" );
-    // キャンバスのコンテキストを取得
-const context = cvs.getContext( "2d" );
+// // キャンバスのコンテキストを取得
+const context = document.getElementById( "canvas" ).getContext( "2d" );
 
 context.beginPath();   // パスの初期化
 context.fillStyle = "red";  // 塗りつぶしをセット
@@ -12,49 +11,46 @@ context.rect(0 , 0 , 300 , 300); // 矩形の座標をパスにセット
 context.fill();  // パスの情報をもとに塗りつぶし
 context.stroke();  // パスの情報をもとに線を描画
 
-// context.clearRect( 0 , 0 , cvs.clientWidth , cvs.clientHeight);
-
-// cvs.addEventListener('mouseover', function() {
-// cvs.style.backgroundColor = 'orange';
-// cvs.style.width = '100vw';
-// });
-
-// const itm = document.getElementsByClassName( "menu-item" );
-// itm[3].addEventListener('mouseover', function() {
-//     itm[3].style.width = '100vw';
-// });
-
 $(function(){
 
 	$('.menu-item').hover(
 		function(){
 			var i = $('.menu-item').index(this);
-			$('.menu-item').eq(i).css('width','100vw');
+			$('.menu-item').eq(i).css({ transform: "rotate(70deg) scaleX(0.6) translate(180px , 30px)" });
 		},
 		function(){
 			var i = $('.menu-item').index(this);
-			$('.menu-item').eq(i).css('width','30vw');
+			$('.menu-item').eq(i).css({ transform: "rotate(0deg)" });
 		}	
 	);
 
+	
+	console.log($.type($('item-canvas').eq(1)));
 
-	$('.item-canvas').hover(
-		function(){
+	// $('.item-canvas').hover(
+	// 	function(){
 
-			var i = $('.item-canvas').index(this);
-			var cnt = $('.item-canvas').eq(i).getContext( "2d" );
-			$('.item-canvas').eq(i).css('left','0%');
-			$('.item-canvas').eq(i).css('width','100%');
-			cnt.fillStyle = "red";
-			cnt.fill();
+	// 		var i = $('.item-canvas').index(this);
+
+	// 		$('.item-canvas').eq(i).css('left','0vw');
+	// 		$('.item-canvas').eq(i).css('width','100vw');
+	// 		// var cnt = $('.item-canvas').eq(i).getContext( "2d" );
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).beginPath();   // パスの初期化
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).fillStyle = "red";  // 塗りつぶしをセット
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).strokeStyle = "blue"; // 線色をセット
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).lineWidth = 3;
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).rect(0 , 0 , 300 , 300);
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).fillStyle = "red";
+	// 		$('.item-canvas').eq(i).getContext( "2d" ).fill();
 			
-		},
-		function(){
-			var i = $('.item-canvas').index(this);
-			$('.item-canvas').eq(i).css('left','70%');
-			$('.item-canvas').eq(i).css('width','30%');
-			$('.item-canvas').eq(i).getContext( "2d" ).fillStyle = "blue";
-			$('.item-canvas').eq(i).getContext( "2d" ).fill();
-		}	
-	);
+	// 	},
+	// 	function(){
+	// 		var i = $('.item-canvas').index(this);
+	// 		$('.item-canvas').eq(i).css('left','70%');
+	// 		$('.item-canvas').eq(i).css('width','30%');
+	// 		// $('.item-canvas').eq(i).getContext( "2d" ).fillStyle = "blue";
+	// 		// $('.item-canvas').eq(i).getContext( "2d" ).fill();
+	// 	}	
+	// );
+
 });

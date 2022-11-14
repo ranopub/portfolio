@@ -17,7 +17,7 @@
   transition: 500ms;
 }
 .menu-wrapper .menu-item p {
-  z-index: 300;
+  transform: rotate(45deg);
 }
 .menu-wrapper .menu-item canvas {
   position: fixed;
@@ -33,6 +33,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 400;
 }
 .menu-wrapper .menu-spacer {
   width: 30vw;
