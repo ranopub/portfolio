@@ -2,9 +2,14 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.menu-wrapper .item {
+  width: 40px;
+  height: 40px;
+  background-color: #004f4f;
+  transition: 500ms;
 }
 .menu-wrapper .menu-item {
   width: 30vw;
