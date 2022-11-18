@@ -2,83 +2,15 @@ $base-color:#ffffff;
 $main-color:#bcff67;
 $accent-color:#004f4f;
 
-.menu-wrapper {
-    // サイズ指定、横VW100、縦100Vh
-    width: 100vw;
-    height: 100vh;
-    
-    // // flexbox指定、子要素は縦列
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // align-items: flex-end;
+body {
+    color: #004f4f;
 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    .item {
-        width: 40px;
-        height: 40px;
-
-        background-color: #004f4f;
-
-        transition: 500ms;
+    h1 {
+        font-size: x-large;
     }
 
-    .menu-item {
-        width: 30vw;
-        height: 15vh;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        z-index: 100;
-
-        // 色指定
-        background-color: $main-color;
-        
-        //アニメーション速度
-        transition: 500ms;
-
-        p {
-            transform: rotate(45deg);
-        }
-
-        canvas {
-            position: fixed;
-            width: 30%;
-            height: 15vh;
-            left: 70%;
-            
-            z-index: 200;
-        }
-
-        section {
-            width: 30vw;
-            height: 15vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            text-align: center;
-
-            z-index: 400;
-        }
-
-        // :hover {
-        //     background-color: $base-color;
-        // } 
-    }
-
-    .menu-spacer{
-        width: 30vw;
-        height: 20vh;
-
-        // 色指定
-        background-color: $main-color;
+    h2 {
+        text-align: right;
     }
 
 }

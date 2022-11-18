@@ -1,47 +1,9 @@
-.menu-wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+body {
+  color: #004f4f;
 }
-.menu-wrapper .item {
-  width: 40px;
-  height: 40px;
-  background-color: #004f4f;
-  transition: 500ms;
+body h1 {
+  font-size: x-large;
 }
-.menu-wrapper .menu-item {
-  width: 30vw;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-  background-color: #bcff67;
-  transition: 500ms;
-}
-.menu-wrapper .menu-item p {
-  transform: rotate(45deg);
-}
-.menu-wrapper .menu-item canvas {
-  position: fixed;
-  width: 30%;
-  height: 15vh;
-  left: 70%;
-  z-index: 200;
-}
-.menu-wrapper .menu-item section {
-  width: 30vw;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 400;
-}
-.menu-wrapper .menu-spacer {
-  width: 30vw;
-  height: 20vh;
-  background-color: #bcff67;
+body h2 {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
