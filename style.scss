@@ -9,8 +9,22 @@ body {
         font-size: x-large;
     }
 
-    h2 {
-        text-align: right;
+    #contents-tab {
+        
+        section {
+            h2 {
+                background-color: #bcff67;
+            }
+    
+            p {
+                display: none;
+            }
+        }
+    
+        section:nth-of-type(odd) {
+            text-align: right;
+        }
+        
     }
-
+    
 }

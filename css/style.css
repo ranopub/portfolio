@@ -4,6 +4,12 @@ body {
 body h1 {
   font-size: x-large;
 }
-body h2 {
+body #contents-tab section h2 {
+  background-color: #bcff67;
+}
+body #contents-tab section p {
+  display: none;
+}
+body #contents-tab section:nth-of-type(odd) {
   text-align: right;
 }/*# sourceMappingURL=style.css.map */
