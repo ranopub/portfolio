@@ -10,9 +10,19 @@ body {
     }
 
     #contents-tab {
-        
+
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+
         section {
+
+            display: flex;
+
             h2 {
+                width: 15vw;
+                height: 15vw;
+
                 background-color: #bcff67;
             }
     
@@ -20,11 +30,11 @@ body {
                 display: none;
             }
         }
-    
-        section:nth-of-type(odd) {
-            text-align: right;
+
+        section:nth-child(odd){
+            display: flex;
+            flex-direction: row-reverse;
         }
-        
     }
     
 }

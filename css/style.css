@@ -4,12 +4,22 @@ body {
 body h1 {
   font-size: x-large;
 }
+body #contents-tab {
+  display: flex;
+  flex-direction: column;
+}
+body #contents-tab section {
+  display: flex;
+}
 body #contents-tab section h2 {
+  width: 15vw;
+  height: 15vw;
   background-color: #bcff67;
 }
 body #contents-tab section p {
   display: none;
 }
-body #contents-tab section:nth-of-type(odd) {
-  text-align: right;
+body #contents-tab section:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=style.css.map */
