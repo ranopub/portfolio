@@ -16,8 +16,18 @@ body #contents-tab section h2 {
   height: 15vw;
   background-color: #bcff67;
 }
-body #contents-tab section p {
+body #contents-tab section .tab-content {
   display: none;
+  align-items: center;
+  position: absolute;
+  left: 15vw;
+  top: 0;
+  width: 70vw;
+  height: 100vh;
+}
+body #contents-tab section .tab-content p {
+  width: 70vw;
+  text-align: center;
 }
 body #contents-tab section:nth-child(odd) {
   display: flex;

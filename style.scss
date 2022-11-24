@@ -12,7 +12,7 @@ body {
     #contents-tab {
 
         display: flex;
-        // justify-content: space-between;
+
         flex-direction: column;
 
         section {
@@ -26,8 +26,22 @@ body {
                 background-color: #bcff67;
             }
     
-            p {
+            .tab-content {
                 display: none;
+                align-items: center;
+
+                position: absolute;
+                left: 15vw;
+                top: 0;
+
+                width: 70vw;
+                height: 100vh;
+
+                p {
+                    width: 70vw;
+                    text-align: center;
+                }
+                
             }
         }
 
@@ -36,5 +50,5 @@ body {
             flex-direction: row-reverse;
         }
     }
-    
+
 }
