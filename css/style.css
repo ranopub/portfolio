@@ -1,5 +1,6 @@
 body {
   color: #004f4f;
+  font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
   font-size: x-large;
@@ -11,25 +12,32 @@ body #contents-tab {
 body #contents-tab section {
   display: flex;
 }
-body #contents-tab section h2 {
-  width: 15vw;
-  height: 15vw;
+body #contents-tab section .tab-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 30vh;
   background-color: #bcff67;
+  transition: 500ms;
 }
 body #contents-tab section .tab-content {
   display: none;
   align-items: center;
-  position: absolute;
-  left: 15vw;
+  position: fixed;
+  left: 20vw;
   top: 0;
-  width: 70vw;
+  width: 60vw;
   height: 100vh;
 }
 body #contents-tab section .tab-content p {
-  width: 70vw;
+  width: 60vw;
   text-align: center;
 }
 body #contents-tab section:nth-child(odd) {
   display: flex;
   flex-direction: row-reverse;
+}
+body .draw-tile {
+  background-color: #bcff67;
 }/*# sourceMappingURL=style.css.map */

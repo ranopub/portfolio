@@ -4,6 +4,7 @@ $accent-color:#004f4f;
 
 body {
     color: #004f4f;
+    font-family: 'Open Sans','Zen Kaku Gothic New', sans-serif;
 
     h1 {
         font-size: x-large;
@@ -19,26 +20,38 @@ body {
 
             display: flex;
 
-            h2 {
-                width: 15vw;
-                height: 15vw;
+            .tab-title {
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 20vw;
+                height: 30vh;
 
                 background-color: #bcff67;
+
+                transition: 500ms;
+
+                h2 {
+
+                }
+            
             }
     
             .tab-content {
                 display: none;
                 align-items: center;
 
-                position: absolute;
-                left: 15vw;
+                position: fixed;
+                left: 20vw;
                 top: 0;
 
-                width: 70vw;
+                width: 60vw;
                 height: 100vh;
 
                 p {
-                    width: 70vw;
+                    width: 60vw;
                     text-align: center;
                 }
                 
@@ -51,4 +64,7 @@ body {
         }
     }
 
+    .draw-tile {
+        background-color: #bcff67;
+    }
 }
