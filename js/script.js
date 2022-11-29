@@ -13,7 +13,7 @@ $(function(){
 		{
 			var i = $('.tab-title').index(this);
 			
-			$('.tab-title').eq(i).css('background-color','#004f4f');
+			$('.tab-title').eq(i).css('background-color','#ffffff');
 			$('.tab-content').css('display','none');
 			$('.tab-title').eq(i).next('.tab-content').css('display','flex');
 		},

@@ -30,6 +30,9 @@ body {
                 height: 30vh;
 
                 background-color: #bcff67;
+                border-color: #bcff67;
+                border-width: 1px;
+                border-style: solid;
 
                 transition: 500ms;
 
@@ -65,6 +68,13 @@ body {
     }
 
     .draw-tile {
-        background-color: #bcff67;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+
+        width: 5px;
+        height: 5px;
+
+        background-color: #004f4f;
     }
 }
