@@ -6,8 +6,10 @@ $(function(){
 	for (let i = 0; i < 256; i++) {
 		$('body').append($('<div class="draw-tile">'));
 	}
+	for (let i = 0; i < 256; i++) {
+		$('.draw-tile').eq(i).css('transform','translate(' + i + 'px, ' + i + 'px)');
+	}
 	
-
 	$('.tab-title').hover(
 		function()
 		{

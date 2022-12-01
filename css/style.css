@@ -45,7 +45,8 @@ body .draw-tile {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 5px;
-  height: 5px;
-  background-color: #004f4f;
+  z-index: -10000;
+  width: 50px;
+  height: 50px;
+  background-color: #bcff67;
 }/*# sourceMappingURL=style.css.map */
