@@ -3,7 +3,7 @@ $main-color:#deffb3;
 $accent-color:#004f4f;
 
 body {
-    color: #004f4f;
+    color: $accent-color;
     font-family: 'Open Sans','Zen Kaku Gothic New', sans-serif;
 
     h1 {

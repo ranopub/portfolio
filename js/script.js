@@ -4,6 +4,7 @@ $(function(){
 
 	var baseColor = '#ffffff';
 	var mainColor = '#deffb3';
+	var accentcolor = $('body').css('color');
 
 	var drawTileQty = 512;
 
