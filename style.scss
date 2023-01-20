@@ -1,6 +1,6 @@
 $base-color:#ffffff;
 $main-color:#deffb3;
-$accent-color:#004f4f;
+$accent-color:#003881;
 
 body {
     color: $accent-color;
@@ -77,6 +77,16 @@ body {
         width: 16px;
         height: 16px;
 
+    }
+    
+    .draw-tile-odd {
         background-color: $main-color;
+    }
+
+    .draw-tile-even {
+        border-width: 1px;
+        border-color: #deffb3;
+
+        background-color: $base-color;
     }
 }

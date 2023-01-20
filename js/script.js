@@ -11,27 +11,55 @@ $(function(){
 	// タイルDIV要素の数
 	var drawTileQty = 1024;
 	// X軸タイル数
-	var drawTileColumn = 16;
-	// タイルサイズXY
+	var drawTileColumn = 32;
+	// タイルサイズ
 	var drawTileSize = 16;
-	// タイルパターン周期
+	// タイルパターン周期、（2進数桁数表記）
 	var drawTileCycle = 8;
-	// タイルX軸方向ずらし(px)
+	var drawTileCycleBit = 3;
+ 	// タイルX軸方向ずらし(px)
 	var drawTileXSlide = 2;
 
 	for (let i = 0; i < drawTileQty; i++) {
-		$('body').append($('<div class="draw-tile">'));
+		if(i%2){
+			$('body').append($('<div class="draw-tile draw-tile-odd">'));
+		}
+		else{
+			$('body').append($('<div class="draw-tile draw-tile-even">'));
+		}
 	}
 
 	for (let i = 0; i < drawTileQty; i++) {
-		$('.draw-tile').eq(i).css('transform',
-			'translate('
-			+  (((i%drawTileColumn)*drawTileSize*2) + ( ((Math.floor(i/drawTileColumn))%drawTileCycle) ^ ((((Math.floor(i/drawTileColumn))%drawTileCycle)>>2)*7) *drawTileXSlide)) 
+		$('.draw-tile').eq(i).css('transform','translate('
+			+  
+			(
+				(
+					(i%drawTileColumn
+					)*drawTileSize
+				) 
+				+ 
+				( 
+					(
+						(Math.floor
+							(i/drawTileColumn)
+						)%drawTileCycle
+					) 
+					^ 
+					(
+						(
+							(
+								(
+									Math.floor(i/drawTileColumn)
+								)%drawTileCycle
+							)>>(drawTileCycleBit-1)
+						)*(drawTileCycle-1)	
+					)
+				) *drawTileXSlide
+			) 
 			+  'px, '
 			+ (Math.floor(i/drawTileColumn)*drawTileSize) 
 			+ 'px)' );
-		//01234567>01234321 000 001 010 011 100 101 110 111 >000 001 010 011 100 011 010 001 x ^ x>>2<<2 001 111 1000 
-		
+		//01234567>01234321 000 001 010 011 100 101 110 111 > 000 001 010 011 100 011 010 001 
 	}
 	
 	$('.tab-title').hover(

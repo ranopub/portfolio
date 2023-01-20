@@ -1,5 +1,5 @@
 body {
-  color: #004f4f;
+  color: #003881;
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
@@ -48,5 +48,12 @@ body .draw-tile {
   z-index: -10000;
   width: 16px;
   height: 16px;
+}
+body .draw-tile-odd {
   background-color: #deffb3;
+}
+body .draw-tile-even {
+  border-width: 1px;
+  border-color: #deffb3;
+  background-color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
