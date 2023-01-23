@@ -1,5 +1,7 @@
 //window.alert($.fn.jquery);
 
+
+
 $(function(){
 
 	var baseColor = '#ffffff';
@@ -7,7 +9,8 @@ $(function(){
 	var accentColor = $('body').css('color');
 
 	// ブラウザウィンドウ中心位置
-
+	var windowWidthCenter = $(window).width()/2;
+	var windowHeightCenter = $(window).height()/2;
 	// タイルDIV要素の数
 	var drawTileQty = 1024;
 	// X軸タイル数
@@ -20,6 +23,45 @@ $(function(){
  	// タイルX軸方向ずらし(px)
 	var drawTileXSlide = 2;
 
+	$.extend({
+		drawTileRender: function(){
+			for (let i = 0; i < drawTileQty; i++) {
+				$('.draw-tile').eq(i).css('transform','translate('
+					+  
+					(
+						windowWidthCenter
+						+						
+						(
+							(i%drawTileColumn
+							)*drawTileSize
+						) 
+						+ 
+						( 
+							(
+								(Math.floor
+									(i/drawTileColumn)
+								)%drawTileCycle
+							) 
+							^ 
+							(
+								(
+									(
+										(
+											Math.floor(i/drawTileColumn)
+										)%drawTileCycle
+									)>>(drawTileCycleBit-1)
+								)*(drawTileCycle-1)	
+							)
+						) *drawTileXSlide
+					) 
+					+  'px, '
+					+ ( Math.floor(i/drawTileColumn)*drawTileSize) 
+					+ 'px)' );
+				 
+			}
+		}
+	})
+
 	for (let i = 0; i < drawTileQty; i++) {
 		if(i%2){
 			$('body').append($('<div class="draw-tile draw-tile-odd">'));
@@ -29,38 +71,8 @@ $(function(){
 		}
 	}
 
-	for (let i = 0; i < drawTileQty; i++) {
-		$('.draw-tile').eq(i).css('transform','translate('
-			+  
-			(
-				(
-					(i%drawTileColumn
-					)*drawTileSize
-				) 
-				+ 
-				( 
-					(
-						(Math.floor
-							(i/drawTileColumn)
-						)%drawTileCycle
-					) 
-					^ 
-					(
-						(
-							(
-								(
-									Math.floor(i/drawTileColumn)
-								)%drawTileCycle
-							)>>(drawTileCycleBit-1)
-						)*(drawTileCycle-1)	
-					)
-				) *drawTileXSlide
-			) 
-			+  'px, '
-			+ (Math.floor(i/drawTileColumn)*drawTileSize) 
-			+ 'px)' );
-		//01234567>01234321 000 001 010 011 100 101 110 111 > 000 001 010 011 100 011 010 001 
-	}
+	$.drawTileRender();
+	console.log(windowWidthCenter);
 	
 	$('.tab-title').hover(
 		function()
@@ -70,13 +82,17 @@ $(function(){
 			$('.tab-title').eq(i).css('background-color',baseColor);
 			$('.tab-content').css('display','none');
 			$('.tab-title').eq(i).next('.tab-content').css('display','flex');
+			drawTileXSlide = 0;
+			$.drawTileRender();
 		},
 		function()
 		{
 			var i = $('.tab-title').index(this);
 			$('.tab-title').eq(i).css('background-color',mainColor);
-
+			drawTileXSlide = 2;
+			$.drawTileRender();
 		}	
 	);
 
 });
+
