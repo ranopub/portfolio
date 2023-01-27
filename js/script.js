@@ -70,44 +70,7 @@ $(function(){
 		}
 	})
 
-	$.extend({
-		drawTileRender: function(){
-			for (let i = 0; i < drawTileQty; i++) {
-				$('.draw-tile').eq(i).css('transform','translate('
-					+  
-					(
-						windowWidthCenter
-						+						
-						(
-							(i%drawTileColumn
-							)*drawTileSize
-						) 
-						+ 
-						( 
-							(
-								(Math.floor
-									(i/drawTileColumn)
-								)%drawTileCycle
-							) 
-							^ 
-							(
-								(
-									(
-										(
-											Math.floor(i/drawTileColumn)
-										)%drawTileCycle
-									)>>(drawTileCycleBit-1)
-								)*(drawTileCycle-1)	
-							)
-						) *drawTileXSlide
-					) 
-					+  'px, '
-					+ ( Math.floor(i/drawTileColumn)*drawTileSize) 
-					+ 'px)' );
-				 
-			}
-		}
-	})
+
 
 	for (let i = 0; i < drawTileQty; i++) {
 		if(i%2){
