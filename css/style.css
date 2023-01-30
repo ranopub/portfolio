@@ -37,9 +37,11 @@ body #contents-tab section .tab-content p {
   width: 60vw;
   text-align: center;
 }
-body #contents-tab section:nth-child(odd) {
-  display: flex;
-  flex-direction: row-reverse;
+@media screen and (min-width: 1000px) {
+  body #contents-tab section:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 body .draw-tile {
   position: fixed;
@@ -48,7 +50,7 @@ body .draw-tile {
   z-index: -10000;
   width: 32px;
   height: 32px;
-  transition: 1000ms;
+  transition: 500ms;
 }
 body .draw-tile-odd {
   background-color: #deffb3;
@@ -57,4 +59,16 @@ body .draw-tile-even {
   border-width: 1px;
   border-color: #deffb3;
   background-color: #ffffff;
+}
+body .scroll-guide {
+  align-items: center;
+  position: fixed;
+  left: 20vw;
+  top: 100vw;
+  width: 60vw;
+  height: 100vh;
+}
+body .scroll-guide p {
+  width: 60vw;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
