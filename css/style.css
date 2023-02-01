@@ -62,13 +62,15 @@ body .draw-tile-even {
 }
 body .scroll-guide {
   align-items: center;
+  display: flex;
   position: fixed;
   left: 20vw;
-  top: 100vw;
+  top: 95vh;
   width: 60vw;
-  height: 100vh;
 }
 body .scroll-guide p {
   width: 60vw;
+  flex-direction: column-reverse;
+  align-items: flex-end;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
