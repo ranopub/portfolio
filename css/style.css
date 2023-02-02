@@ -19,7 +19,7 @@ body #contents-tab section .tab-title {
   width: 20vw;
   height: 30vh;
   background-color: #deffb3;
-  border-color: #deffb3;
+  border-color: #003881;
   border-width: 1px;
   border-style: solid;
   transition: 500ms;
@@ -71,6 +71,6 @@ body .scroll-guide {
 body .scroll-guide p {
   width: 60vw;
   flex-direction: column-reverse;
-  align-items: flex-end;
+  justify-content: flex-end;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
