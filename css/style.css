@@ -5,6 +5,7 @@ body {
 }
 body h1 {
   font-size: x-large;
+  text-align: center;
 }
 body #contents-tab {
   display: flex;
