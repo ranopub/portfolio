@@ -1,5 +1,6 @@
 body {
   color: #003881;
+  background-color: #fdfaff;
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
@@ -18,10 +19,10 @@ body #contents-tab section .tab-title {
   align-items: center;
   width: 20vw;
   height: 30vh;
-  background-color: #deffb3;
-  border-color: #003881;
-  border-width: 1px;
-  border-style: solid;
+  background-color: #fdfaff;
+  border-color: #deffb3;
+  border-width: 5px;
+  border-style: double;
   transition: 500ms;
 }
 body #contents-tab section .tab-content {
@@ -50,7 +51,7 @@ body .draw-tile {
   z-index: -10000;
   width: 32px;
   height: 32px;
-  transition: 500ms;
+  transition: 100ms;
 }
 body .draw-tile-odd {
   background-color: #deffb3;
@@ -58,7 +59,7 @@ body .draw-tile-odd {
 body .draw-tile-even {
   border-width: 1px;
   border-color: #deffb3;
-  background-color: #ffffff;
+  background-color: #fdfaff;
 }
 body .scroll-guide {
   align-items: center;

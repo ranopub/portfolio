@@ -4,7 +4,7 @@
 
 $(function(){
 
-	var baseColor = '#ffffff';
+	var baseColor = $('body').css('background-color');
 	var mainColor = '#deffb3';
 	var accentColor = $('body').css('color');
 
@@ -75,17 +75,16 @@ $(function(){
 					function()
 					{
 						var i = $('.tab-title').index(this);
-						$('.tab-title').eq(i).css('background-color',baseColor);
+						$('.tab-title').eq(i).css('background-color',mainColor);
 						$('.tab-content').css('display','none');
 						$('.tab-title').eq(i).next('.tab-content').css('display','flex');
 						drawTileSlideIs = 0;
 						$.drawTileRender();
-						console.log("h");
 					},
 					function()
 					{
 						var i = $('.tab-title').index(this);
-						$('.tab-title').eq(i).css('background-color',mainColor);
+						$('.tab-title').eq(i).css('background-color',baseColor);
 						drawTileSlideIs = 1;
 						$.drawTileRender();
 					}	
@@ -96,13 +95,13 @@ $(function(){
 				$('.tab-title').on({
 					'touchstart':function(){
 						var i = $('.tab-title').index(this);
-						$('.tab-title').eq(i).css('background-color',baseColor);
+						$('.tab-title').eq(i).css('background-color',mainColor);
 						$('.tab-content').css('display','none');
 						$('.tab-title').eq(i).next('.tab-content').css('display','flex');
 					},
 					'touchend':function(){
 						var i = $('.tab-title').index(this);
-						$('.tab-title').eq(i).css('background-color',mainColor);
+						$('.tab-title').eq(i).css('background-color',baseColor);
 					}
 				})
 				$('body').on({
