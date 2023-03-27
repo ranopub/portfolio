@@ -28,8 +28,23 @@ $(function(){
 	$.extend({
 		drawTileRender: function(){
 			for (let i = 0; i < drawTileQty; i++) {
+				//タイルの縦横を設定
 				$('.draw-tile').eq(i).css('width',drawTileSize);
 				$('.draw-tile').eq(i).css('height',drawTileSize);
+
+				//描画の基準点設定
+				var drawOriginX = windowWidthCenter - (drawTileSize*drawTileColumn/2);
+				var drawOriginY = windowHeightCenter - (drawTileSize*drawTileQty/drawTileColumn/2);
+
+				//N列・行目のときNかけるタイル幅だけX・Y方向に移動
+				var AlignColumn = (i%drawTileColumn)*drawTileSize;
+				var AlignRow = Math.floor(i/drawTileColumn)*drawTileSize;
+
+				//タイルパターン周期のうち何番目に当たるか
+				var OrderInCycle = Math.floor(i/drawTileColumn)*drawTileSize;
+				//最上位ビットを取り出し、周期の前半・後半ですべて０・１のビットマスク作成
+				var MaskFor2ndHalf = (((Math.floor(i/drawTileColumn))%drawTileCycle)>>(drawTileCycleBit-1))*(drawTileCycle-1);
+				//XORで周期前半が
 				$('.draw-tile').eq(i).css('transform','translate('
 					+  
 					(
