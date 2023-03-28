@@ -47,47 +47,47 @@ $(function(){
 				//XORで周期前半が１２３４〜、後半で〜４３２１とする
 				var drawTileSlide = OrderInCycle ^ MaskFor2ndHalf;
 				//描画
-				// $('.draw-tile').eq(i).css('transform','translate('+(drawOriginX+(AlignColumn)+(drawTileSlide) *(drawTileXSlide*drawTileSlideIs)) 
-				// 	+  'px, '
-				// 	+	(drawOriginY + AlignRow	) 
-				// 	+ 'px)' );
+				$('.draw-tile').eq(i).css('transform','translate('+(drawOriginX+(AlignColumn)+(drawTileSlide) *(drawTileXSlide*drawTileSlideIs)) 
+					+  'px, '
+					+	(drawOriginY + AlignRow	) 
+					+ 'px)' );
 				 
 
-				$('.draw-tile').eq(i).css('transform','translate('
-					+  
-					(
-						windowWidthCenter-(drawTileSize*drawTileColumn/2)
-						+						
-						(
-							(i%drawTileColumn
-							)*drawTileSize
-						) 
-						+ 
-						( 
-							(
-								(Math.floor
-									(i/drawTileColumn)
-								)%drawTileCycle
-							) 
-							^ 
-							(
-								(
-									(
-										(
-											Math.floor(i/drawTileColumn)
-										)%drawTileCycle
-									)>>(drawTileCycleBit-1)
-								)*(drawTileCycle-1)	
-							)
-						) *(drawTileXSlide*drawTileSlideIs)
-					) 
-					+  'px, '
-					+ 
-						( 
-						windowHeightCenter - drawTileSize*drawTileQty/drawTileColumn/2
-						+ Math.floor(i/drawTileColumn)*drawTileSize
-						) 
-					+ 'px)' );
+				// $('.draw-tile').eq(i).css('transform','translate('
+				// 	+  
+				// 	(
+				// 		windowWidthCenter-(drawTileSize*drawTileColumn/2)
+				// 		+						
+				// 		(
+				// 			(i%drawTileColumn
+				// 			)*drawTileSize
+				// 		) 
+				// 		+ 
+				// 		( 
+				// 			(
+				// 				(Math.floor
+				// 					(i/drawTileColumn)
+				// 				)%drawTileCycle
+				// 			) 
+				// 			^ 
+				// 			(
+				// 				(
+				// 					(
+				// 						(
+				// 							Math.floor(i/drawTileColumn)
+				// 						)%drawTileCycle
+				// 					)>>(drawTileCycleBit-1)
+				// 				)*(drawTileCycle-1)	
+				// 			)
+				// 		) *(drawTileXSlide*drawTileSlideIs)
+				// 	) 
+				// 	+  'px, '
+				// 	+ 
+				// 		( 
+				// 		windowHeightCenter - drawTileSize*drawTileQty/drawTileColumn/2
+				// 		+ Math.floor(i/drawTileColumn)*drawTileSize
+				// 		) 
+				// 	+ 'px)' );
 				 
 			}
 		},
