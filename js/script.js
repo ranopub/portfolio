@@ -44,7 +44,15 @@ $(function(){
 				var OrderInCycle = Math.floor(i/drawTileColumn)*drawTileSize;
 				//最上位ビットを取り出し、周期の前半・後半ですべて０・１のビットマスク作成
 				var MaskFor2ndHalf = (((Math.floor(i/drawTileColumn))%drawTileCycle)>>(drawTileCycleBit-1))*(drawTileCycle-1);
-				//XORで周期前半が
+				//XORで周期前半が１２３４〜、後半で〜４３２１とする
+				var drawTileSlide = OrderInCycle ^ MaskFor2ndHalf;
+				//描画
+				// $('.draw-tile').eq(i).css('transform','translate('+(drawOriginX+(AlignColumn)+(drawTileSlide) *(drawTileXSlide*drawTileSlideIs)) 
+				// 	+  'px, '
+				// 	+	(drawOriginY + AlignRow	) 
+				// 	+ 'px)' );
+				 
+
 				$('.draw-tile').eq(i).css('transform','translate('
 					+  
 					(
