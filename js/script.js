@@ -41,7 +41,7 @@ $(function(){
 				var AlignRow = Math.floor(i/drawTileColumn)*drawTileSize;
 
 				//タイルパターン周期のうち何番目に当たるか
-				var OrderInCycle = Math.floor(i/drawTileColumn)*drawTileSize;
+				var OrderInCycle = Math.floor(i/drawTileColumn)*drawTileCycle;
 				//最上位ビットを取り出し、周期の前半・後半ですべて０・１のビットマスク作成
 				var MaskFor2ndHalf = (((Math.floor(i/drawTileColumn))%drawTileCycle)>>(drawTileCycleBit-1))*(drawTileCycle-1);
 				//XORで周期前半が１２３４〜、後半で〜４３２１とする
