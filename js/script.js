@@ -46,6 +46,8 @@ $(function(){
 				var MaskFor2ndHalf = (((Math.floor(i/drawTileColumn))%drawTileCycle)>>(drawTileCycleBit-1))*(drawTileCycle-1);
 				//XORで周期前半が１２３４〜、後半で〜４３２１とする
 				var drawTileSlide = OrderInCycle ^ MaskFor2ndHalf;
+				//これに一段当たりのX方向のずれとオンオフのフラグを掛ける	
+
 				//描画
 				$('.draw-tile').eq(i).css('transform','translate('+(drawOriginX+(AlignColumn)+ (drawTileSlide) *(drawTileXSlide*drawTileSlideIs)) 
 					+  'px, '
