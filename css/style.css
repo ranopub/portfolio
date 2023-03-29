@@ -23,7 +23,7 @@ body #contents-tab section .tab-title {
   background-color: #fdfaff;
   border-color: #deffb3;
   border-width: 5px;
-  border-style: double;
+  border-style: dotted;
   transition: 500ms;
 }
 body #contents-tab section .tab-content {
