@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans','Zen Kaku Gothic New', sans-serif;
     
     h1 {
-        font-size: 48px;
+        font-size: 32px;
         text-align: center;
     }
 
@@ -35,7 +35,7 @@ body {
 
                 border-color: $main-color;
                 border-width: 5px;
-                border-style: dotted;
+                border-style: double;
 
                 transition: 500ms;
             
@@ -56,7 +56,7 @@ body {
                     width: 60vw;
                     text-align: center;
 
-                    font-size: 32px;
+                    font-size: 16px;
                 }
                 
             }
