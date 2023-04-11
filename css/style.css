@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
+  height: 100vw;
   font-size: 32px;
   text-align: center;
 }
@@ -19,7 +20,7 @@ body #contents-tab section .tab-title {
   justify-content: center;
   align-items: center;
   width: 20vw;
-  height: 30vh;
+  height: 100vw;
   background-color: #fdfaff;
   border-color: #deffb3;
   border-width: 5px;

@@ -8,6 +8,8 @@ body {
     font-family: 'Open Sans','Zen Kaku Gothic New', sans-serif;
     
     h1 {
+        height: 100vw;
+
         font-size: 32px;
         text-align: center;
     }
@@ -29,7 +31,7 @@ body {
                 align-items: center;
                 
                 width: 20vw;
-                height: 30vh;
+                height: 100vw;
 
                 background-color: $base-color;
 
