@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans','Zen Kaku Gothic New', sans-serif;
     
     h1 {
-        height: 100vw;
+        height: 10vw;
 
         font-size: 32px;
         text-align: center;
@@ -30,8 +30,10 @@ body {
                 justify-content: center;
                 align-items: center;
                 
+                position: fixed;
+
                 width: 20vw;
-                height: 100vw;
+                height: 15vw;
 
                 background-color: $base-color;
 
@@ -40,16 +42,21 @@ body {
                 border-style: double;
 
                 transition: 500ms;
+
+                .profile {
+                    left: 0vw;
+                    top: 10vh;
+                }
             
             }
     
             .tab-content {
-                display: none;
+                // display: none;
                 align-items: center;
 
-                position: fixed;
-                left: 20vw;
-                top: 0;
+                // position: fixed;
+                // left: 20vw;
+                // top: 0;
 
                 width: 60vw;
                 height: 100vh;
@@ -64,13 +71,13 @@ body {
             }
         }
     
-    @media screen and (min-width: 1000px){
-            section:nth-child(odd){
-                display: flex;
-                flex-direction: row-reverse;
-            }
-        }
-    }
+    // @media screen and (min-width: 1000px){
+    //         section:nth-child(odd){
+    //             display: flex;
+    //             flex-direction: row-reverse;
+    //         }
+    //     }
+    // }
 
     .draw-tile {
         position: fixed;

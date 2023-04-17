@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
-  height: 100vw;
+  height: 10vw;
   font-size: 32px;
   text-align: center;
 }
@@ -19,20 +19,21 @@ body #contents-tab section .tab-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
   width: 20vw;
-  height: 100vw;
+  height: 15vw;
   background-color: #fdfaff;
   border-color: #deffb3;
   border-width: 5px;
   border-style: double;
   transition: 500ms;
 }
+body #contents-tab section .tab-title .profile {
+  left: 0vw;
+  top: 10vh;
+}
 body #contents-tab section .tab-content {
-  display: none;
   align-items: center;
-  position: fixed;
-  left: 20vw;
-  top: 0;
   width: 60vw;
   height: 100vh;
 }
