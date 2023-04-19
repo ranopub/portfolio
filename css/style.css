@@ -4,43 +4,37 @@ body {
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
-  height: 10vw;
   font-size: 32px;
   text-align: center;
 }
-body #contents-tab {
+body #nav {
   display: flex;
   flex-direction: column;
+  position: sticky;
 }
-body #contents-tab section {
-  display: flex;
-}
-body #contents-tab section .tab-title {
+body #nav .tab-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  width: 20vw;
-  height: 15vw;
+  width: 15vw;
+  height: 15vh;
   background-color: #fdfaff;
   border-color: #deffb3;
   border-width: 5px;
   border-style: double;
   transition: 500ms;
 }
-body #contents-tab section .tab-title .profile {
-  left: 0vw;
-  top: 10vh;
-}
-body #contents-tab section .tab-content {
+body .content {
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
 }
-body #contents-tab section .tab-content p {
-  width: 60vw;
-  text-align: center;
-  font-size: 16px;
+body .content h2 {
+  display: none;
+}
+body .content .tab-content {
+  width: 70vw;
 }
 body .draw-tile {
   position: fixed;
