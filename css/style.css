@@ -1,9 +1,11 @@
 body {
   color: #003881;
-  background-color: #fdfaff;
+  background-color: rgba(255, 255, 255, 0.4745098039);
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
+  padding-bottom: 500px;
 }
 body h1 {
+  height: 150px;
   font-size: 32px;
   text-align: center;
 }
@@ -11,14 +13,15 @@ body #nav {
   display: flex;
   flex-direction: column;
   position: sticky;
+  top: 0;
 }
 body #nav .tab-title {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 15vw;
-  height: 15vh;
-  background-color: #fdfaff;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4745098039);
   border-color: #deffb3;
   border-width: 5px;
   border-style: double;
@@ -29,12 +32,19 @@ body .content {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  border-color: #deffb3;
+  border-width: 5px;
+  border-style: double;
 }
 body .content h2 {
   display: none;
 }
 body .content .tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70vw;
+  height: 500px;
 }
 body .draw-tile {
   position: fixed;
@@ -51,7 +61,7 @@ body .draw-tile-odd {
 body .draw-tile-even {
   border-width: 1px;
   border-color: #deffb3;
-  background-color: #fdfaff;
+  background-color: rgba(255, 255, 255, 0.4745098039);
 }
 body .scroll-guide {
   align-items: center;

@@ -1,4 +1,4 @@
-$base-color:#fdfaff;
+$base-color:#ffffff79;
 $main-color:#deffb3;
 $accent-color:#003881;
 
@@ -6,9 +6,11 @@ body {
     color: $accent-color;
     background-color: $base-color;
     font-family: 'Open Sans','Zen Kaku Gothic New', sans-serif;
+
+    padding-bottom: 500px;
     
     h1 {
-        // height: 10vw;
+        height: 150px;
 
         font-size: 32px;
         text-align: center;
@@ -19,6 +21,7 @@ body {
         flex-direction: column;
 
         position: sticky;
+        top: 0;
         
         .tab-title{
             display: flex;
@@ -26,7 +29,7 @@ body {
             align-items: center;
 
             width: 15vw;
-            height: 15vh;
+            height: 100px;
 
             background-color: $base-color;
 
@@ -45,72 +48,25 @@ body {
 
         width: 100vw;
 
+        border-color: $main-color;
+        border-width: 5px;
+        border-style: double;
+
         h2{
             display: none;
         }
 
         .tab-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             width: 70vw;
+            height: 500px;
+
         }
     }
 
-    // #contents-tab {
-
-    //     display: flex;
-
-    //     flex-direction: column;
-
-    //     section {
-
-    //         display: flex;
-
-    //         .tab-title {
-                
-    //             display: flex;
-    //             justify-content: center;
-    //             align-items: center;
-                
-    //             position: fixed;
-
-    //             width: 20vw;
-    //             height: 15vw;
-
-    //             background-color: $base-color;
-
-    //             border-color: $main-color;
-    //             border-width: 5px;
-    //             border-style: double;
-
-    //             transition: 500ms;
-
-    //             .profile {
-    //                 left: 0vw;
-    //                 top: 10vh;
-    //             }
-            
-    //         }
-    
-    //         .tab-content {
-    //             // display: none;
-    //             align-items: center;
-
-    //             // position: fixed;
-    //             // left: 20vw;
-    //             // top: 0;
-
-    //             width: 100vw;
-    //             height: 100vh;
-
-    //             p {
-    //                 width: 60vw;
-    //                 text-align: center;
-
-    //                 font-size: 16px;
-    //             }
-                
-    //         }
-    //     }
-    
     // @media screen and (min-width: 1000px){
     //         section:nth-child(odd){
     //             display: flex;
