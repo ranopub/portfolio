@@ -9,8 +9,8 @@ $(function(){
 	var accentColor = $('body').css('color');
 
 	// ブラウザウィンドウ中心位置
-	var windowWidthCenter = $(window).width()/2;
-	var windowHeightCenter = $(window).height()/2;
+	var windowWidthCenter = $(window).innerHeight()/2;
+	var windowHeightCenter = $(window).innerHeight()/2;
 	// タイルDIV要素の数
 	var drawTileQty = 256;
 	// X軸タイル数
@@ -53,43 +53,6 @@ $(function(){
 					+  'px, '
 					+	(drawOriginY + AlignRow	) 
 					+ 'px)' );
-				 
-
-				// $('.draw-tile').eq(i).css('transform','translate('
-				// 	+  
-				// 	(
-				// 		windowWidthCenter-(drawTileSize*drawTileColumn/2)
-				// 		+						
-				// 		(
-				// 			(i%drawTileColumn
-				// 			)*drawTileSize
-				// 		) 
-				// 		+ 
-				// 		( 
-				// 			(
-				// 				(Math.floor
-				// 					(i/drawTileColumn)
-				// 				)%drawTileCycle
-				// 			) 
-				// 			^ 
-				// 			(
-				// 				(
-				// 					(
-				// 						(
-				// 							Math.floor(i/drawTileColumn)
-				// 						)%drawTileCycle
-				// 					)>>(drawTileCycleBit-1)
-				// 				)*(drawTileCycle-1)	
-				// 			)
-				// 		) *(drawTileXSlide*drawTileSlideIs)
-				// 	) 
-				// 	+  'px, '
-				// 	+ 
-				// 		( 
-				// 		windowHeightCenter - drawTileSize*drawTileQty/drawTileColumn/2
-				// 		+ Math.floor(i/drawTileColumn)*drawTileSize
-				// 		) 
-				// 	+ 'px)' );
 				 
 			}
 		},
@@ -162,64 +125,64 @@ $(function(){
 	
 	$(window).scroll(function() {
  
-		if($(this).scrollTop()<750)
+		if($(this).scrollTop()<$(window).innerHeight()/2)
 		{
 			$('.tab-title').css('background-color',baseColor);
-			// $('.tab-content').css('display','none');
+			$('.tab-content').css('background-color',mainColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=750 && $(this).scrollTop()<750+500)
+		else if($(this).scrollTop()>=$(window).innerHeight()/2 && $(this).scrollTop()<$(window).innerHeight()*1.5)
 		{
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(0).css('background-color',mainColor);
-			// $('.tab-content').css('display','none');
-			$('.tab-title').eq(0).next('.tab-content').css('display','flex');
+			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').eq(0).css('background-color',baseColor);
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=750+500 && $(this).scrollTop()<750 +500*2)
+		else if($(this).scrollTop()>=$(window).innerHeight()*1.5 && $(this).scrollTop()<$(window).innerHeight()*2.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(1).css('background-color',mainColor);
-			// $('.tab-content').css('display','none');
-			$('.tab-title').eq(1).next('.tab-content').css('display','flex');
+			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').eq(1).css('background-color',baseColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=750 +500*2 && $(this).scrollTop()<750 +500*3)
+		else if($(this).scrollTop()>=$(window).innerHeight()*2.5 && $(this).scrollTop()<$(window).innerHeight()*3.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(2).css('background-color',mainColor);
-			// $('.tab-content').css('display','none');
-			$('.tab-title').eq(2).next('.tab-content').css('display','flex');
+			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').eq(2).css('background-color',baseColor);
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=750 +500*3 && $(this).scrollTop()<750 +500*4)
+		else if($(this).scrollTop()>=$(window).innerHeight()*3.5 && $(this).scrollTop()<$(window).innerHeight()*4.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(3).css('background-color',mainColor);
-			// $('.tab-content').css('display','none');
-			$('.tab-title').eq(3).next('.tab-content').css('display','flex');
+			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').eq(3).css('background-color',baseColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=750 +500*4 && $(this).scrollTop()<750 +500*5)
+		else if($(this).scrollTop()>=$(window).innerHeight()*4.5 && $(this).scrollTop()<$(window).innerHeight()*5.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(4).css('background-color',mainColor);
-			// $('.tab-content').css('display','none');
-			$('.tab-title').eq(4).next('.tab-content').css('display','flex');
+			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').eq(4).css('background-color',baseColor);
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=750 +500*5 && $(this).scrollTop()<750 +500*6)
+		else if($(this).scrollTop()>=$(window).innerHeight()*5.5 && $(this).scrollTop()<$(window).innerHeight()*6.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(5).css('background-color',mainColor);
-			// $('.tab-content').css('display','none');
-			$('.tab-title').eq(5).next('.tab-content').css('display','flex');
+			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').eq(5).css('background-color',baseColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
