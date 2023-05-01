@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #003881;
   background-color: rgba(255, 255, 255, 0.4745098039);
@@ -5,7 +9,7 @@ body {
 }
 body h1 {
   height: 10vh;
-  font-size: 32px;
+  font-size: 48px;
   text-align: center;
 }
 body #nav {
@@ -42,8 +46,10 @@ body .content .tab-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   width: 70vw;
   height: 100vh;
+  font-size: 32px;
 }
 body .draw-tile {
   position: fixed;

@@ -128,7 +128,7 @@ $(function(){
 		if($(this).scrollTop()<$(window).innerHeight()/2)
 		{
 			$('.tab-title').css('background-color',baseColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -136,7 +136,7 @@ $(function(){
 		{
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(0).css('background-color',mainColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(0).css('background-color',baseColor);
 			drawTileSlideIs = 1;
 			$.drawTileRender();
@@ -145,7 +145,7 @@ $(function(){
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(1).css('background-color',mainColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(1).css('background-color',baseColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
@@ -154,7 +154,7 @@ $(function(){
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(2).css('background-color',mainColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(2).css('background-color',baseColor);
 			drawTileSlideIs = 1;
 			$.drawTileRender();
@@ -163,7 +163,7 @@ $(function(){
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(3).css('background-color',mainColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(3).css('background-color',baseColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
@@ -172,7 +172,7 @@ $(function(){
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(4).css('background-color',mainColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(4).css('background-color',baseColor);
 			drawTileSlideIs = 1;
 			$.drawTileRender();
@@ -181,7 +181,7 @@ $(function(){
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(5).css('background-color',mainColor);
-			$('.tab-content').css('background-color',mainColor);
+			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(5).css('background-color',baseColor);
 			drawTileSlideIs = 0;
 			$.drawTileRender();
