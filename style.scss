@@ -24,23 +24,34 @@ body {
 
         position: sticky;
         top: 0;
+
+        width: 100vw;
+
+        a {
         
-        .tab-title{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            .tab-title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-            width: 15vw;
-            height: 15vh;
+                width: 15vw;
+                height: 15vh;
 
-            background-color: $base-color;
+                background-color: $base-color;
 
-            border-color: $main-color;
-            border-width: 5px;
-            border-style: double;
+                border-color: $main-color;
+                border-width: 5px;
+                border-style: double;
 
-            transition: 500ms;
+                transition: 500ms;                        
+            }
+
+            &:nth-of-type(odd) {
+                align-self: flex-end;
+            }
         }
+
+
     }
 
     .content {
@@ -54,6 +65,7 @@ body {
         border-width: 5px;
         border-style: double;
 
+        
         h2{
             display: none;
         }
@@ -70,6 +82,7 @@ body {
             font-size: 32px;
 
         }
+    
     }
 
     // @media screen and (min-width: 1000px){

@@ -17,8 +17,9 @@ body #nav {
   flex-direction: column;
   position: sticky;
   top: 0;
+  width: 100vw;
 }
-body #nav .tab-title {
+body #nav a .tab-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +30,9 @@ body #nav .tab-title {
   border-width: 5px;
   border-style: double;
   transition: 500ms;
+}
+body #nav a:nth-of-type(odd) {
+  align-self: flex-end;
 }
 body .content {
   display: flex;
