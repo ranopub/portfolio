@@ -50,8 +50,14 @@ body {
                 align-self: flex-end;
             }
         }
+    }
 
-
+    @media screen and (min-width: 1000px){
+        #nav{
+            a &:nth-of-type(odd){
+            align-self:flex-start;
+            }
+        }
     }
 
     .content {
@@ -85,13 +91,7 @@ body {
     
     }
 
-    // @media screen and (min-width: 1000px){
-    //         section:nth-child(odd){
-    //             display: flex;
-    //             flex-direction: row-reverse;
-    //         }
-    //     }
-    //}
+
 
     .draw-tile {
         position: fixed;

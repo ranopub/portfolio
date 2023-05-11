@@ -34,6 +34,11 @@ body #nav a .tab-title {
 body #nav a:nth-of-type(odd) {
   align-self: flex-end;
 }
+@media screen and (min-width: 1000px) {
+  a body #nav:nth-of-type(odd) {
+    align-self: flex-start;
+  }
+}
 body .content {
   display: flex;
   justify-content: center;
