@@ -52,13 +52,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 1000px){
-        #nav{
-            a &:nth-of-type(odd){
-            align-self:flex-start;
-            }
-        }
-    }
+
 
     .content {
         display: flex;
@@ -91,6 +85,23 @@ body {
     
     }
 
+    @media screen and (max-width: 1000px){
+        h1 {
+            font-size: 28px;
+        }
+
+        #nav{
+            a {
+                align-self:flex-end;
+            }
+        }
+
+        .content{    
+            .tab-content{
+                font-size: 16px;
+            }
+        }
+    }
 
 
     .draw-tile {
