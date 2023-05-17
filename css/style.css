@@ -19,6 +19,9 @@ body #nav {
   top: 0;
   width: 100vw;
 }
+body #nav a {
+  width: 15vw;
+}
 body #nav a .tab-title {
   display: flex;
   justify-content: center;
@@ -51,6 +54,7 @@ body .content .tab-content {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  position: relative;
   width: 70vw;
   height: 100vh;
   font-size: 32px;

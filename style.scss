@@ -28,6 +28,7 @@ body {
         width: 100vw;
 
         a {
+            width: 15vw;
         
             .tab-title{
                 display: flex;
@@ -75,6 +76,8 @@ body {
             justify-content: center;
             align-items: center;
             gap: 40px;
+
+            position: relative;
 
             width: 70vw;
             height: 100vh;
