@@ -59,6 +59,11 @@ body .content .tab-content {
   height: 100vh;
   font-size: 32px;
 }
+body .content .tab-content span {
+  border-radius: 100px;
+  border-color: #003881;
+  border-width: 2px;
+}
 @media screen and (max-width: 1000px) {
   body h1 {
     font-size: 28px;

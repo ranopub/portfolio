@@ -84,6 +84,12 @@ body {
 
             font-size: 32px;
 
+            span {
+                border-radius: 100px;
+                border-color: $accent-color;
+                border-width: 2px;        
+            }
+
         }
     
     }
