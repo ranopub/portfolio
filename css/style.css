@@ -19,6 +19,9 @@ body #nav {
   top: 0;
   width: 100vw;
 }
+body #nav a {
+  width: 15vw;
+}
 body #nav a .tab-title {
   display: flex;
   justify-content: center;
@@ -39,9 +42,6 @@ body .content {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  border-color: #deffb3;
-  border-width: 5px;
-  border-style: double;
 }
 body .content h2 {
   display: none;
@@ -51,9 +51,32 @@ body .content .tab-content {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  position: relative;
   width: 70vw;
   height: 100vh;
   font-size: 32px;
+}
+body .content .tab-content span {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  border-radius: 10px;
+  border-color: #003881;
+  border-width: 1px;
+  font-family: "Bree Serif", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  body h1 {
+    font-size: 28px;
+  }
+  body #nav a {
+    align-self: flex-end;
+  }
+  body .content .tab-content {
+    font-size: 16px;
+  }
 }
 body .draw-tile {
   position: fixed;

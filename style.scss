@@ -28,6 +28,7 @@ body {
         width: 100vw;
 
         a {
+            width: 15vw;
         
             .tab-title{
                 display: flex;
@@ -50,9 +51,9 @@ body {
                 align-self: flex-end;
             }
         }
-
-
     }
+
+
 
     .content {
         display: flex;
@@ -61,9 +62,9 @@ body {
 
         width: 100vw;
 
-        border-color: $main-color;
-        border-width: 5px;
-        border-style: double;
+        // border-color: $main-color;
+        // border-width: 5px;
+        // border-style: double;
 
         
         h2{
@@ -76,22 +77,51 @@ body {
             align-items: center;
             gap: 40px;
 
+            position: relative;
+
             width: 70vw;
             height: 100vh;
 
             font-size: 32px;
 
+            span {
+                display: inline-block;
+
+                width: 20px;
+                height: 24px;
+
+                border-radius: 10px;
+                border-color: $accent-color;
+                border-width: 1px;
+                
+                font-family: 'Bree Serif', sans-serif;
+                font-size: 18px;
+
+                text-align: center;
+            }
+
         }
     
     }
 
-    // @media screen and (min-width: 1000px){
-    //         section:nth-child(odd){
-    //             display: flex;
-    //             flex-direction: row-reverse;
-    //         }
-    //     }
-    //}
+    @media screen and (max-width: 1000px){
+        h1 {
+            font-size: 28px;
+        }
+
+        #nav{
+            a {
+                align-self:flex-end;
+            }
+        }
+
+        .content{    
+            .tab-content{
+                font-size: 16px;
+            }
+        }
+    }
+
 
     .draw-tile {
         position: fixed;
