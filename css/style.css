@@ -4,7 +4,7 @@ html {
 
 body {
   color: #003881;
-  background-color: rgba(255, 255, 255, 0.4745098039);
+  background-color: rgba(255, 255, 255, 0.537254902);
   font-family: "Open Sans", "Zen Kaku Gothic New", sans-serif;
 }
 body h1 {
@@ -28,7 +28,7 @@ body #nav a .tab-title {
   align-items: center;
   width: 15vw;
   height: 15vh;
-  background-color: rgba(255, 255, 255, 0.4745098039);
+  background-color: rgba(255, 255, 255, 0.537254902);
   border-color: #deffb3;
   border-width: 5px;
   border-style: double;
@@ -93,7 +93,7 @@ body .draw-tile-odd {
 body .draw-tile-even {
   border-width: 1px;
   border-color: #deffb3;
-  background-color: rgba(255, 255, 255, 0.4745098039);
+  background-color: rgba(255, 255, 255, 0.537254902);
 }
 body .scroll-guide {
   align-items: center;

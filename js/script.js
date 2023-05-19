@@ -9,7 +9,7 @@ $(function(){
 	var accentColor = $('body').css('color');
 
 	// ブラウザウィンドウ中心位置
-	var windowWidthCenter = $(window).innerHeight()/2;
+	var windowWidthCenter = $(window).innerWidth()/2;
 	var windowHeightCenter = $(window).innerHeight()/2;
 	// タイルDIV要素の数
 	var drawTileQty = 256;
