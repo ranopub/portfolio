@@ -62,9 +62,9 @@ body {
 
         width: 100vw;
 
-        border-color: $main-color;
-        border-width: 5px;
-        border-style: double;
+        // border-color: $main-color;
+        // border-width: 5px;
+        // border-style: double;
 
         
         h2{
@@ -85,9 +85,19 @@ body {
             font-size: 32px;
 
             span {
-                border-radius: 100px;
+                display: inline-block;
+
+                width: 20px;
+                height: 24px;
+
+                border-radius: 10px;
                 border-color: $accent-color;
-                border-width: 2px;        
+                border-width: 1px;
+                
+                font-family: 'Bree Serif', sans-serif;
+                font-size: 18px;
+
+                text-align: center;
             }
 
         }
