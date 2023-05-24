@@ -36,6 +36,9 @@ $(function(){
 				var drawOriginX = windowWidthCenter - (drawTileSize*drawTileColumn/2);
 				var drawOriginY = windowHeightCenter - (drawTileSize*drawTileQty/drawTileColumn/2);
 
+				$('.draw-section').css('left',windowWidthCenter);
+				$('.draw-section').css('top',windowHeightCenter);
+
 				//N列・行目のときNかけるタイル幅だけX・Y方向に移動
 				var AlignColumn = (i%drawTileColumn)*drawTileSize;
 				var AlignRow = Math.floor(i/drawTileColumn)*drawTileSize;
@@ -113,10 +116,10 @@ $(function(){
 
 	for (let i = 0; i < drawTileQty; i++) {
 		if(i%2){
-			$('body').append($('<div class="draw-tile draw-tile-odd">'));
+			$('.draw-section').append($('<div class="draw-tile draw-tile-odd">'));
 		}
 		else{
-			$('body').append($('<div class="draw-tile draw-tile-even">'));
+			$('.draw-section').append($('<div class="draw-tile draw-tile-even">'));
 		}
 	}
 	

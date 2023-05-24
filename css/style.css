@@ -78,6 +78,12 @@ body .content .tab-content span {
     font-size: 16px;
   }
 }
+body .draw-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -10000;
+}
 body .draw-tile {
   position: fixed;
   left: 0;
