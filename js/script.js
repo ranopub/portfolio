@@ -33,8 +33,10 @@ $(function(){
 				$('.draw-tile').eq(i).css('height',drawTileSize);
 
 				//描画の基準点設定
-				var drawOriginX = windowWidthCenter - (drawTileSize*drawTileColumn/2);
-				var drawOriginY = windowHeightCenter - (drawTileSize*drawTileQty/drawTileColumn/2);
+				// var drawOriginX = windowWidthCenter - (drawTileSize*drawTileColumn/2);
+				// var drawOriginY = windowHeightCenter - (drawTileSize*drawTileQty/drawTileColumn/2);
+				var drawOriginX = - (drawTileSize*drawTileColumn/2);
+				var drawOriginY = - (drawTileSize*drawTileQty/drawTileColumn/2);
 
 				$('.draw-section').css('left',windowWidthCenter);
 				$('.draw-section').css('top',windowHeightCenter);
@@ -141,6 +143,7 @@ $(function(){
 			$('.tab-title').eq(0).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(0).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(360deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}

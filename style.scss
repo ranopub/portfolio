@@ -128,31 +128,33 @@ body {
         top: 0;
 
         z-index: -10000;
-        // transform: rotate(0deg);
-    }
-
-    .draw-tile {
-        position: fixed;
-        left: 0;
-        top: 0;
-
-        z-index: -10000;
-
-        width: 32px;
-        height: 32px;
-
-        transition: 100ms;
-    }
+        transform: rotate(30deg);
     
-    .draw-tile-odd {
-        background-color: $main-color;
-    }
+        transition: 1000ms;
 
-    .draw-tile-even {
-        border-width: 1px;
-        border-color: #deffb3;
+        .draw-tile {
+            position: fixed;
+            left: 0;
+            top: 0;
 
-        background-color: $base-color;
+            z-index: -10000;
+
+            width: 32px;
+            height: 32px;
+
+            
+        }
+        
+        .draw-tile-odd {
+            background-color: $main-color;
+        }
+
+        .draw-tile-even {
+            border-width: 1px;
+            border-color: #deffb3;
+
+            background-color: $base-color;
+        }
     }
 
     .scroll-guide {
