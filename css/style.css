@@ -18,6 +18,7 @@ body #nav {
   position: sticky;
   top: 0;
   width: 100vw;
+  pointer-events: none;
 }
 body #nav a {
   width: 15vw;
@@ -96,6 +97,11 @@ body .draw-section .draw-tile {
 }
 body .draw-section .draw-tile-odd {
   background-color: #deffb3;
+}
+body .draw-section .draw-tile:hover {
+  background-color: #ff7700;
+  border-width: 1px;
+  border-color: #003881;
 }
 body .draw-section .draw-tile-even {
   border-width: 1px;

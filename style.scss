@@ -27,6 +27,8 @@ body {
 
         width: 100vw;
 
+        pointer-events: none;
+
         a {
             width: 15vw;
         
@@ -141,14 +143,18 @@ body {
 
             width: 32px;
             height: 32px;
-
-            
         }
-        
+
         .draw-tile-odd {
             background-color: $main-color;
         }
 
+        .draw-tile:hover {
+            background-color: #ff7700;
+            border-width: 1px;
+            border-color: #003881;
+        }
+        
         .draw-tile-even {
             border-width: 1px;
             border-color: #deffb3;
