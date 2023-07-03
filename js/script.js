@@ -153,6 +153,7 @@ $(function(){
 			$('.tab-title').eq(1).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(1).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(30deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -162,6 +163,7 @@ $(function(){
 			$('.tab-title').eq(2).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(2).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(60deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -170,7 +172,8 @@ $(function(){
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(3).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
-			$('.tab-content').eq(3).css('background-color',baseColor);
+			$('.tab-content').eq(3).css('background-color',baseColor);			
+			$('.draw-section').css('transform','rotate(360deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -180,6 +183,7 @@ $(function(){
 			$('.tab-title').eq(4).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(4).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(60deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -189,6 +193,7 @@ $(function(){
 			$('.tab-title').eq(5).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(5).css('background-color',baseColor);
+			$('.draw-section').css('transform','translateX(30px) rotate3d(1 , 1 , 0 , 360deg) scale(1.3) skewX(20deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
