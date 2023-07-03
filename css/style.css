@@ -18,6 +18,7 @@ body #nav {
   position: sticky;
   top: 0;
   width: 100vw;
+  pointer-events: none;
 }
 body #nav a {
   width: 15vw;
@@ -78,19 +79,31 @@ body .content .tab-content span {
     font-size: 16px;
   }
 }
-body .draw-tile {
+body .draw-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -10000;
+  transform: rotate(30deg);
+  transition: 1000ms;
+}
+body .draw-section .draw-tile {
   position: fixed;
   left: 0;
   top: 0;
   z-index: -10000;
   width: 32px;
   height: 32px;
-  transition: 100ms;
 }
-body .draw-tile-odd {
+body .draw-section .draw-tile-odd {
   background-color: #deffb3;
 }
-body .draw-tile-even {
+body .draw-section .draw-tile:hover {
+  background-color: #ff7700;
+  border-width: 1px;
+  border-color: #003881;
+}
+body .draw-section .draw-tile-even {
   border-width: 1px;
   border-color: #deffb3;
   background-color: rgba(255, 255, 255, 0.537254902);

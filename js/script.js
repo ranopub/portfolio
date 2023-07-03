@@ -33,8 +33,13 @@ $(function(){
 				$('.draw-tile').eq(i).css('height',drawTileSize);
 
 				//描画の基準点設定
-				var drawOriginX = windowWidthCenter - (drawTileSize*drawTileColumn/2);
-				var drawOriginY = windowHeightCenter - (drawTileSize*drawTileQty/drawTileColumn/2);
+				// var drawOriginX = windowWidthCenter - (drawTileSize*drawTileColumn/2);
+				// var drawOriginY = windowHeightCenter - (drawTileSize*drawTileQty/drawTileColumn/2);
+				var drawOriginX = - (drawTileSize*drawTileColumn/2);
+				var drawOriginY = - (drawTileSize*drawTileQty/drawTileColumn/2);
+
+				$('.draw-section').css('left',windowWidthCenter);
+				$('.draw-section').css('top',windowHeightCenter);
 
 				//N列・行目のときNかけるタイル幅だけX・Y方向に移動
 				var AlignColumn = (i%drawTileColumn)*drawTileSize;
@@ -113,10 +118,10 @@ $(function(){
 
 	for (let i = 0; i < drawTileQty; i++) {
 		if(i%2){
-			$('body').append($('<div class="draw-tile draw-tile-odd">'));
+			$('.draw-section').append($('<div class="draw-tile draw-tile-odd">'));
 		}
 		else{
-			$('body').append($('<div class="draw-tile draw-tile-even">'));
+			$('.draw-section').append($('<div class="draw-tile draw-tile-even">'));
 		}
 	}
 	
@@ -138,6 +143,7 @@ $(function(){
 			$('.tab-title').eq(0).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(0).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(360deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -147,6 +153,7 @@ $(function(){
 			$('.tab-title').eq(1).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(1).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(30deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -156,6 +163,7 @@ $(function(){
 			$('.tab-title').eq(2).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(2).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(60deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -164,7 +172,8 @@ $(function(){
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(3).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
-			$('.tab-content').eq(3).css('background-color',baseColor);
+			$('.tab-content').eq(3).css('background-color',baseColor);			
+			$('.draw-section').css('transform','rotate(360deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -174,6 +183,7 @@ $(function(){
 			$('.tab-title').eq(4).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(4).css('background-color',baseColor);
+			$('.draw-section').css('transform','rotate(60deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -183,6 +193,7 @@ $(function(){
 			$('.tab-title').eq(5).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(5).css('background-color',baseColor);
+			$('.draw-section').css('transform','translateX(30px) rotate3d(1 , 1 , 0 , 360deg) scale(1.3) skewX(20deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
