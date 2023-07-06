@@ -62,56 +62,6 @@ $(function(){
 			}
 		},
 
-		
-
-		// interactive: function(){
-		// 	if(window.matchMedia("(min-width: 1000px)").matches){
-		// 		$('.tab-title').hover(
-		// 			function()
-		// 			{
-		// 				var i = $('.tab-title').index(this);
-		// 				$('.tab-title').eq(i).css('background-color',mainColor);
-		// 				$('.tab-content').css('display','none');
-		// 				$('.tab-title').eq(i).next('.tab-content').css('display','flex');
-		// 				drawTileSlideIs = 0;
-		// 				$.drawTileRender();
-		// 			},
-		// 			function()
-		// 			{
-		// 				var i = $('.tab-title').index(this);
-		// 				$('.tab-title').eq(i).css('background-color',baseColor);
-		// 				drawTileSlideIs = 1;
-		// 				$.drawTileRender();
-		// 			}	
-		// 		);
-				
-		// 	}else{
-		// 		drawTileSize = 16;
-		// 		$('.tab-title').on({
-		// 			'touchstart':function(){
-		// 				var i = $('.tab-title').index(this);
-		// 				$('.tab-title').eq(i).css('background-color',mainColor);
-		// 				$('.tab-content').css('display','none');
-		// 				$('.tab-title').eq(i).next('.tab-content').css('display','flex');
-		// 			},
-		// 			'touchend':function(){
-		// 				var i = $('.tab-title').index(this);
-		// 				$('.tab-title').eq(i).css('background-color',baseColor);
-		// 			}
-		// 		})
-		// 		$('body').on({
-		// 			'touchstart':function(){
-		// 				drawTileSlideIs = 0;
-		// 				$.drawTileRender();
-						
-		// 			},
-		// 			'touchend':function(){
-		// 				drawTileSlideIs = 1;
-		// 				$.drawTileRender();
-		// 			}
-		// 		})
-		// 	}
-		// }
 	})
 
 
