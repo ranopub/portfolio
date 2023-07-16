@@ -84,6 +84,12 @@ body {
 
             font-size: 32px;
 
+            img {
+                width: 20%;
+
+                margin: 10px;
+            }
+
             span {
                 display: inline-block;
 
@@ -159,12 +165,7 @@ body {
         align-items: center;
         display: flex;
 
-        position: fixed;
-        left: 20vw;
-        top: 95vh;
-
-        width: 60vw;
-        // height: 5vh;
+        width: 80vw;
 
         p {
             width: 60vw;

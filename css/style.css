@@ -56,6 +56,10 @@ body .content .tab-content {
   height: 100vh;
   font-size: 32px;
 }
+body .content .tab-content img {
+  width: 20%;
+  margin: 10px;
+}
 body .content .tab-content span {
   display: inline-block;
   width: 20px;
@@ -105,10 +109,7 @@ body .draw-section .draw-tile-even {
 body .scroll-guide {
   align-items: center;
   display: flex;
-  position: fixed;
-  left: 20vw;
-  top: 95vh;
-  width: 60vw;
+  width: 80vw;
 }
 body .scroll-guide p {
   width: 60vw;
