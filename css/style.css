@@ -83,7 +83,7 @@ body .draw-section {
   left: 0;
   top: 0;
   z-index: -10000;
-  transform: rotate(30deg);
+  transform: rotate(0deg);
   transition: 1000ms;
 }
 body .draw-section .draw-tile {
@@ -96,11 +96,6 @@ body .draw-section .draw-tile {
 }
 body .draw-section .draw-tile-odd {
   background-color: #deffb3;
-}
-body .draw-section .draw-tile:hover {
-  background-color: #ff7700;
-  border-width: 1px;
-  border-color: #003881;
 }
 body .draw-section .draw-tile-even {
   border-width: 1px;

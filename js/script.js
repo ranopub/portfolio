@@ -93,7 +93,7 @@ $(function(){
 			$('.tab-title').eq(0).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(0).css('background-color',baseColor);
-			$('.draw-section').css('transform','rotate(360deg)');
+			$('.draw-section').css('transform','rotate(0deg)');
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -103,7 +103,7 @@ $(function(){
 			$('.tab-title').eq(1).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(1).css('background-color',baseColor);
-			$('.draw-section').css('transform','rotate(30deg)');
+			$('.draw-section').css('transform','rotate(0deg)');
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -134,6 +134,9 @@ $(function(){
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(4).css('background-color',baseColor);
 			$('.draw-section').css('transform','rotate(60deg)');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%6==0)$('.draw-tile').eq(i).css('background-color','khaki');
+			}
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
