@@ -135,7 +135,7 @@ $(function(){
 			$('.tab-content').eq(4).css('background-color',baseColor);
 			$('.draw-section').css('transform','rotate(60deg)');
 			for (let i = 0; i < drawTileQty; i++) {
-				if(i%6==0)$('.draw-tile').eq(i).css('background-color','khaki');
+				$('.draw-tile').eq(i).css('background-color','hsl('+i*10+',100%,80%');
 			}
 			drawTileSlideIs = 1;
 			$.drawTileRender();
