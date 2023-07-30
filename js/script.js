@@ -84,6 +84,14 @@ $(function(){
 		{
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-content').css('background-color','transparent');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%2){
+					$('.draw-tile').eq(i).css('background-color',mainColor);
+				}
+				else{
+					$('.draw-tile').eq(i).css('background-color',baseColor);
+				}
+			}
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
@@ -94,6 +102,14 @@ $(function(){
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(0).css('background-color',baseColor);
 			$('.draw-section').css('transform','rotate(0deg)');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%2){
+					$('.draw-tile').eq(i).css('background-color',mainColor);
+				}
+				else{
+					$('.draw-tile').eq(i).css('background-color',baseColor);
+				}
+			}
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
@@ -104,30 +120,54 @@ $(function(){
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(1).css('background-color',baseColor);
 			$('.draw-section').css('transform','rotate(0deg)');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%2){
+					$('.draw-tile').eq(i).css('background-color',mainColor);
+				}
+				else{
+					$('.draw-tile').eq(i).css('background-color',baseColor);
+				}
+			}
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=$(window).innerHeight()*2.5 && $(this).scrollTop()<$(window).innerHeight()*3.5)
+		else if($(this).scrollTop()>=$(window).innerHeight()*2.5 && $(this).scrollTop()<$(window).innerHeight()*4.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(2).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(2).css('background-color',baseColor);
 			$('.draw-section').css('transform','rotate(60deg)');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%2){
+					$('.draw-tile').eq(i).css('background-color',mainColor);
+				}
+				else{
+					$('.draw-tile').eq(i).css('background-color',baseColor);
+				}
+			}
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=$(window).innerHeight()*3.5 && $(this).scrollTop()<$(window).innerHeight()*4.5)
+		else if($(this).scrollTop()>=$(window).innerHeight()*4.5 && $(this).scrollTop()<$(window).innerHeight()*5.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(3).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(3).css('background-color',baseColor);			
 			$('.draw-section').css('transform','rotate(360deg)');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%2){
+					$('.draw-tile').eq(i).css('background-color',mainColor);
+				}
+				else{
+					$('.draw-tile').eq(i).css('background-color',baseColor);
+				}
+			}
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=$(window).innerHeight()*4.5 && $(this).scrollTop()<$(window).innerHeight()*5.5)
+		else if($(this).scrollTop()>=$(window).innerHeight()*5.5 && $(this).scrollTop()<$(window).innerHeight()*6.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(4).css('background-color',mainColor);
@@ -140,13 +180,21 @@ $(function(){
 			drawTileSlideIs = 1;
 			$.drawTileRender();
 		}
-		else if($(this).scrollTop()>=$(window).innerHeight()*5.5 && $(this).scrollTop()<$(window).innerHeight()*6.5)
+		else if($(this).scrollTop()>=$(window).innerHeight()*6.5 && $(this).scrollTop()<$(window).innerHeight()*7.5)
 		{	
 			$('.tab-title').css('background-color',baseColor);
 			$('.tab-title').eq(5).css('background-color',mainColor);
 			$('.tab-content').css('background-color','transparent');
 			$('.tab-content').eq(5).css('background-color',baseColor);
 			$('.draw-section').css('transform','translateX(30px) rotate3d(1 , 1 , 0 , 360deg) scale(1.3) skewX(20deg)');
+			for (let i = 0; i < drawTileQty; i++) {
+				if(i%2){
+					$('.draw-tile').eq(i).css('background-color',mainColor);
+				}
+				else{
+					$('.draw-tile').eq(i).css('background-color',baseColor);
+				}
+			}
 			drawTileSlideIs = 0;
 			$.drawTileRender();
 		}
