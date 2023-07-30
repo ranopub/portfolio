@@ -71,6 +71,9 @@ body .content .tab-content span {
   font-size: 18px;
   text-align: center;
 }
+body .content #tool {
+  height: 200vh;
+}
 @media screen and (max-width: 1000px) {
   body h1 {
     font-size: 28px;
@@ -106,14 +109,11 @@ body .draw-section .draw-tile-even {
   border-color: #deffb3;
   background-color: rgba(255, 255, 255, 0.537254902);
 }
-body .scroll-guide {
-  align-items: center;
-  display: flex;
-  width: 80vw;
+body .license {
+  width: 100%;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
-body .scroll-guide p {
-  width: 60vw;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-  text-align: center;
+body .license p {
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
